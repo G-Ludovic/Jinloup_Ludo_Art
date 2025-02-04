@@ -1,3 +1,32 @@
-h1 {
-    color: red;
+body {
+    margin: 0;
+}
+
+.header {
+    background: grey;
+    padding: 20px;
+    height: auto;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+}
+
+.header-nav {
+    margin: 50px 0;
+}
+
+.header-title {
+    margin-top: 0;
+}
+
+.main {
+    background: lightgrey;
+    padding: 20px;
+}
+
+.footer {
+    background: grey;
+    padding: 10px 20px;
 }
