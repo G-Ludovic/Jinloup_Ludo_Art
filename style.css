@@ -14,7 +14,12 @@ body {
 }
 
 .header-nav {
-    margin: 50px 0;
+    margin: 20px 0;
+}
+
+.header-nav a {
+    padding: 0 10px;
+    background: lightgreen;
 }
 
 .header-title {
