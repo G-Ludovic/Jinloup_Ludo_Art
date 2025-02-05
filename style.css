@@ -10,7 +10,7 @@ body {
     padding: 20px;                                          /* Marge intérieure */
     height: auto;                                           /* Hauteur automatique */
     color: white;                                         /* Couleur du texte */
-    font-size: 14px;                                        /* Taille du texte */
+    font-size: 20px;                                        /* Taille du texte */
 }
 
 .header img {
@@ -19,12 +19,20 @@ body {
 }
 
 .header-nav {
-    margin: 20px 0;                                         /* Marge exterieure */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 0.1em 0.2em;
     text-align: center;                                     /* Texte centré */ 
+    background: #1ea7dd;                                  /* Couleur de fond */
 }
 
 .header-nav a {
-    padding: 0 10px;                                        /* Marge interne */
+                                       /* Marge interne */
+    color: inherit;
+    text-decoration: none;                                  /* Sans décoration */
+    font-size: 1.3rem;                                      /* Taille du texte */
+    padding: 0.4em 0.5em;
 }
 
 .header-nav a:hover {
@@ -32,8 +40,14 @@ body {
 }
 
 .header-title {
-    margin-top: 0;                                          /* Marges extérieures haut */
-    font-size: 30px;                                        /* Taille du texte */
+    position: fixed;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    color: white;
+    background: rgb(55, 28, 61);
+    font-size: 1.3rem;                                      /* Taille du texte */
+    padding: 0.1em 0.2em;
 }
 
 .main {
