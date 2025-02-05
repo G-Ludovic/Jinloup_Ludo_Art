@@ -1,55 +1,61 @@
 body {
-    margin: 0;
-    line-height: 1.4;
-    letter-spacing: 0.2px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;                                              /* Marges extérieures */
+    line-height: 1.4;                                       /* Hauteur de ligne */
+    letter-spacing: 0.2px;                                  /* Espacement des lettres */
+    font-family: Arial, Helvetica, sans-serif;              /* Police de caractères */
 }
 
 .header {
-    background: grey;
-    padding: 20px;
-    height: auto;
-    color: white;
-    font-size: 14px;
+    background: grey;                                     /* Couleur de fond */
+    padding: 20px;                                          /* Marge intérieure */
+    height: auto;                                           /* Hauteur automatique */
+    color: white;                                         /* Couleur du texte */
+    font-size: 14px;                                        /* Taille du texte */
 }
 
 .header img {
-    width: 100%;
-    height: auto;
+    width: 100%;                                            /* Largeur 100% */
+    height: auto;                                           /* Hauteur automatique */
 }
 
 .header-nav {
-    margin: 20px 0;
-    text-align: center;
+    margin: 20px 0;                                         /* Marge exterieure */
+    text-align: center;                                     /* Texte centré */ 
 }
 
 .header-nav a {
-    padding: 0 10px;                    /* Marge interne */
-    color: inherit;                     /* Herite les styles du parent */
-    text-decoration: none;              /* Enleve le soulignement par defaut */
-    font-weight: bold;                  /* Gras */
+    padding: 0 10px;                                        /* Marge interne */
 }
 
 .header-nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline;                             /* Soulignement au survol */
 }
 
 .header-title {
-    margin-top: 0;
-    font-size: 30px;
+    margin-top: 0;                                          /* Marges extérieures haut */
+    font-size: 30px;                                        /* Taille du texte */
 }
 
 .main {
-    background: lightgrey;
-    padding: 20px;
-    font-size: 16px;
+    background: lightgrey;                                /* Couleur de fond */
+    padding: 20px;                                          /* Marge intérieure */
+    font-size: 16px;                                        /* Taille du texte */
 }
 
 .main p {
-    text-align: justify;
+    text-align: justify;                                    /* Texte justifié */
+    
 }
 
 .footer {
-    background: grey;
-    padding: 10px 20px;
+    background: grey;                                     /* Couleur de fond */
+    padding: 10px 20px;                                     /* Marge intérieure haut/bas et gauche/droite */
+}
+
+.button {
+    color: #ffffff;                                       /* Couleur du texte */
+    background: #1ea7dd;                                  /* Couleur de fond */
+    text-decoration: none;                                  /* Sans décoration */
+    font-size: 1.3rem;                                      /* Taille du texte */
+    padding: 0.4em 0.5em;                                   /* Marge intérieure haut/bas et gauche/droite */
 }
