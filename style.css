@@ -20,11 +20,18 @@ body {
 
 .header-nav {
     margin: 20px 0;
+    text-align: center;
 }
 
 .header-nav a {
-    padding: 0 10px;
+    padding: 0 10px;                    /* Marge interne */
     color: inherit;                     /* Herite les styles du parent */
+    text-decoration: none;              /* Enleve le soulignement par defaut */
+    font-weight: bold;                  /* Gras */
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
 }
 
 .header-title {
