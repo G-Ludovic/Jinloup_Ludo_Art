@@ -5,7 +5,7 @@ html, body {
 body {
     margin: 0;                                              /* Marges extérieures */
     line-height: 1.4;                                       /* Hauteur de ligne */
-    letter-spacing: 0.2px;                                  /* Espacement des lettres */
+    letter-spacing: 0.1px;                                  /* Espacement des lettres */
     font-family: Arial, Helvetica, sans-serif;              /* Police de caractères */
 }
 
@@ -16,10 +16,9 @@ body {
     right: 0;
     background: grey;                                     /* Couleur de fond */
     padding: 20px;                                          /* Marge intérieure */
-    height: auto;                                           /* Hauteur automatique */
     color: white;                                         /* Couleur du texte */
-    height: 30px;
-    font-size: 18px;                                        /* Taille du texte */
+    height: 34px;
+    font-size: 20px;                                        /* Taille du texte */
     z-index: 2;
 }
 
@@ -81,4 +80,14 @@ body {
     text-decoration: none;                                  /* Sans décoration */
     font-size: 1.3rem;                                      /* Taille du texte */
     padding: 0.4em 0.5em;                                   /* Marge intérieure haut/bas et gauche/droite */
+}
+
+.avatar-align-left {
+    float: left;
+    margin-right: 15px;
+}
+
+.avatar-align-right {
+    float: right;
+    margin-left: 15px;
 }
