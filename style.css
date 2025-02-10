@@ -88,7 +88,7 @@ body {
     color: #ffffff;
     background: #1ea7dd;
     text-decoration: none;
-    font-size: 1.3rem;
+    /*font-size: 1.3rem;*/
     padding: 0.4em 0.5em;
 }
 
@@ -108,4 +108,12 @@ hr {
 
 .post-header h2 {
     overflow: hidden;
+}
+
+.form {
+    position: relative;
+    background: lightgrey;
+    padding: 70px 20px 20px;
+    font-size: 16px;
+    /*z-index: 1;*/
 }
