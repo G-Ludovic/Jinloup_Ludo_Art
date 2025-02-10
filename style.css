@@ -26,10 +26,9 @@ body {
     height: auto;
     z-index: 2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1px);
-    background-image: url("img/Banniere3.jpg"),
-                      url("img/Banniere.jpg");
+    background-image: url("img/Banniere3.jpg");
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
     background-size: cover;
     font-size: 16px;
 }
