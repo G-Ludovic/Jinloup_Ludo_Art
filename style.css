@@ -3,10 +3,15 @@ html, body {
 }
 
 body {
+    background-position: center;
     margin: 0;                                              /* Marges extérieures */
     line-height: 1.4;                                       /* Hauteur de ligne */
     letter-spacing: 0.1px;                                  /* Espacement des lettres */
     font-family: Arial, Helvetica, sans-serif;              /* Police de caractères */
+}
+
+.Banniere {
+    background-position: center;
 }
 
 .header {
@@ -14,18 +19,24 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: grey;                                     /* Couleur de fond */
-    padding: 20px;                                          /* Marge intérieure */
-    color: white;                                         /* Couleur du texte */
+    background: rgb(48, 48, 48);
+    padding: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
     height: auto;
     z-index: 2;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1px);
+    background-image: url("img/Banniere3.jpg"),
+                      url("img/Banniere.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    font-size: 16px;
 }
 
 .header img {
-    width: 100%;                                            /* Largeur 100% */
-    height: auto;                                           /* Hauteur automatique */
+    width: 100%;
+    height: auto;
 }
 
 .header-nav {
@@ -36,13 +47,15 @@ body {
 }
 
 .header-nav a {
-    padding: 0 10px;                                        /* Marge interne */
+    padding: 0 10px;
     color: inherit;
-    text-decoration: none;                                  /* Sans décoration */
+    text-decoration: none;
+    background-color: rgba(172, 170, 170, 0.4);
 }
 
 .header-nav a:hover {
-    text-decoration: underline;                             /* Soulignement au survol */
+    text-decoration: underline;
+    background-color: rgba(172, 170, 170, 0.2);
 }
 
 .header-title {
@@ -62,22 +75,22 @@ body {
 }
 
 .main p {
-    text-align: justify;                                    /* Texte justifié */
+    text-align: justify;
     margin-bottom: 1.5rem;
     overflow: hidden;
 }
 
 .footer {
-    background: grey;                                     /* Couleur de fond */
-    padding: 10px 20px;                                     /* Marge intérieure haut/bas et gauche/droite */
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    padding: 10px 20px;
 }
 
 .button {
-    color: #ffffff;                                       /* Couleur du texte */
-    background: #1ea7dd;                                  /* Couleur de fond */
-    text-decoration: none;                                  /* Sans décoration */
-    font-size: 1.3rem;                                      /* Taille du texte */
-    padding: 0.4em 0.5em;                                   /* Marge intérieure haut/bas et gauche/droite */
+    color: #ffffff;
+    background: #1ea7dd;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0.4em 0.5em;
 }
 
 .avatar-align-left {
