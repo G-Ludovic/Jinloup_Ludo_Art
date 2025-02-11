@@ -1,0 +1,71 @@
+.galerie-section-crea {
+  background-image: url("img/fond1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+  
+.galerie-section-crea h2 {
+  color: none;
+}
+  
+.grid-dessin {
+  /* Utilisation de repeat() pour rendre le code plus lisible et dynamique.
+  Ajout d'un padding autour de la grille pour une meilleure gestion des espaces.
+  Activation de box-sizing pour éviter les conflits de mise en page.*/
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 300px);
+  gap: 15px 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  @media (max-width: 2560px) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 300px);
+  }
+  @media (max-width: 2000px) {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 300px);
+  }
+  @media (max-width: 1500px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 300px);
+  }
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+  }
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px);
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 300px);
+  }
+}
+  
+.grid-dessin img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+  
+.lien-conteneur-crea {
+  position: relative;
+}
+  
+.crea-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
