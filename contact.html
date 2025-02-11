@@ -6,6 +6,7 @@
     <title>Jinloup Ludo Art</title>
     <meta name="description" content="Galerie d'art de Jinloup Ludo Art">
     <link href="style.css" rel="stylesheet" media="screen">
+    <link href="contact.css" rel="stylesheet" media="screen">
     <link href="print.css" rel="stylesheet" media="print">
 </head>
 
@@ -20,30 +21,28 @@
     </header>
 
     <section class="main">
-        <header class="post-header">
-                <h2>Nous envoyer un message</h2>
-        </header>
-        <form action="contact.html">
-            <div>
-                <label for="lastname">Nom<sup>*</sup></label>
-                    <input type="text" required id="lastname" name="lastname">
-            </div>
-            <div>
-                <label for="firstname">Prénom<sup>*</sup></label>
-                    <input type="text" required id="firstname" name="firstname">
-            </div>
-            <div>
-                <label for="email">Email<sup>*</sup></label>
-                    <input type="email" id="email" name="email" placeholder="votre@email.fr">
-            </div>
-            <div>
-                <label for="message">Message<sup>*</sup></label>
-                    <textarea required id="message" name="message" placeholder="Votre message ici..."></textarea>
-            </div>
-            <div>
+        <div class="contact-container">
+            <h1>Contact</h1>
+            <form action="envoyer.php" method="POST">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="sujet">Sujet</label>
+                    <input type="text" id="sujet" name="sujet" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
                 <button type="submit">Envoyer</button>
-            </div>
-        </form>
+            </form>
+        </div>
     </section>
 
     <footer class="footer">
