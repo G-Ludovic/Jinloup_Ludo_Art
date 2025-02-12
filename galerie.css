@@ -1,8 +1,11 @@
 .galerie-section-crea {
-  background-image: url("img/fond1.jpg");
+  background-image: url("img/fond2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: white solid 1px;
 }
   
 .galerie-section-crea h2 {
@@ -54,7 +57,7 @@
 .lien-conteneur-crea {
   position: relative;
 }
-  
+
 .crea-hover {
   position: absolute;
   top: 0;
