@@ -3,50 +3,29 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
 }
-  
+
 .grid-dessin {
-  /* Utilisation de repeat() pour rendre le code plus lisible et dynamique.
-  Ajout d'un padding autour de la grille pour une meilleure gestion des espaces.
-  Activation de box-sizing pour éviter les conflits de mise en page.*/
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 15px;
   padding: 15px;
   box-sizing: border-box;
 }
-  
+
 .grid-dessin img {
-  /* Utilisation de object-fit: cover pour maintenir les proportions des images. */
   width: 100%;
-  height: auto; /* Remplacez '200px' par 'auto' pour une hauteur adaptative */
+  height: auto;
   object-fit: cover;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  aspect-ratio: 1/2;
 }
 
-/* Ajouter un aspect-ratio pour éviter les déformations des images */
-.grid-dessin img {
-  aspect-ratio: 1/2; /* Exemple : une hauteur qui est la moitié de la largeur */
-}
-  
-/* Masquer le text par défaut */
 .crea-hover {
   display: none;
-}
-
-/* Effet d'animation pour le texte au survol */
-.lien-conteneur-crea:hover .crea-hover {
-  display: grid;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-
-/* Animation de l'image au survol */
-.lien-conteneur-crea:hover img {
-  transform: scale(1.02);
-}
-
-.crea-hover {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -55,45 +34,37 @@
   opacity: 0;
 }
 
-/* Assurez-vous que les images sont bien positionnées */
-.grid-dessin img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Taille par défaut */
-@media (min-width: 1000px) {
-  .grid-dessin {
-      grid-template-columns: repeat(6, 1fr);
-  }
+.lien-conteneur-crea:hover .crea-hover,
+.lien-conteneur-crea:hover img {
+  display: grid;
+  opacity: 1;
+  transform: scale(1.02);
 }
 
 @media (max-width: 800px) {
   .grid-dessin {
-      grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @media (max-width: 600px) {
   .grid-dessin {
-      grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 400px) {
   .grid-dessin {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   } 
 }
 
 @media (max-width: 200px) {
   .grid-dessin {
-      grid-template-columns: repeat(1, 1fr);
-  } 
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
-/* Hauteur réduite pour les écrans mobiles */
 .grid-dessin img {
-      height: 300px;
+  height: 300px;
 }

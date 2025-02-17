@@ -1,13 +1,10 @@
-* {
+body {
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-}
-
-body {
-    justify-content: center;
-    align-items: center;
 }
 
 .contact-container {
@@ -24,13 +21,6 @@ body {
     text-align: center;
 }
 
-h1 {
-    color: white;
-    margin-bottom: 2rem;
-    font-size: 1.8rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -44,8 +34,7 @@ label {
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
 }
 
-input,
-textarea {
+.form-control {
     width: 100%;
     padding: 0.8rem;
     border: none;
@@ -56,8 +45,7 @@ textarea {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-input:focus,
-textarea:focus {
+.form-control:focus {
     outline: none;
     background: rgba(255, 255, 255, 0.95);
     border: 1px solid #3498db;
@@ -66,7 +54,10 @@ textarea:focus {
 
 textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 200px;
+    max-height: 400px;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 button {
@@ -85,5 +76,8 @@ button {
     .contact-container {
         padding: 1.5rem;
         margin-top: 1rem;
+    }
+    .form-control {
+        padding: 0.5rem;
     }
 }
