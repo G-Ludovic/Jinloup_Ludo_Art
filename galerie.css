@@ -24,6 +24,32 @@
   aspect-ratio: 1/2;
 }
 
+.galerie-section-crea {
+  background-image: url("img/fond2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.grid-dessin {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.grid-dessin img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  aspect-ratio: 1/2;
+}
+
 .crea-hover {
   display: none;
   position: absolute;
@@ -56,7 +82,42 @@
 @media (max-width: 400px) {
   .grid-dessin {
     grid-template-columns: repeat(2, 1fr);
-  } 
+  }
+}
+
+@media (max-width: 200px) {
+  .grid-dessin {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.grid-dessin img {
+  height: 300px;
+}
+
+.lien-conteneur-crea:hover .crea-hover,
+.lien-conteneur-crea:hover img {
+  display: grid;
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+@media (max-width: 800px) {
+  .grid-dessin {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-dessin {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .grid-dessin {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 200px) {
